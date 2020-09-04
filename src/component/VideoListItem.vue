@@ -1,5 +1,5 @@
 <template>
-  <li class="media list-group-item">
+  <li class="media list-group-item" @click="onVideoSelect">
     <img class="mr-3" :src="thumnailUrl" :alt="title" />
     <div class="media-body">{{ title }}</div>
   </li>
@@ -16,6 +16,9 @@ export default {
     thumnailUrl() {
       return this.video.snippet.thumbnails.default.url
     },
+  },
+  methods: {
+    onVideoSelect() {},
   },
 }
 </script>
