@@ -6,13 +6,13 @@
 
 <script>
 export default {
-  name: 'SearchBar',
+  name: "SearchBar",
   methods: {
-    onInput: function(event) {
-      this.$emit('termChange', event.target.value)
+    onInput: function (event) {
+      this.$emit("termChange", event.target.value);
     },
   },
-}
+};
 </script>
 
 <style></style>

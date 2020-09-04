@@ -1,7 +1,5 @@
 <template>
-  <ul>
-    VideoList
-  </ul>
+  <ul>VideoList</ul>
 </template>
 
 <script>
