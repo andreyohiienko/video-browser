@@ -1,7 +1,6 @@
 <template>
   <ul>
-    VideoList
-    {{ videos.length }}
+    <VideoListItem v-for="(video, index) in videos" :key="index"></VideoListItem>
   </ul>
 </template>
 

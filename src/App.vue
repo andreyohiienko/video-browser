@@ -3,7 +3,6 @@
     <SearchBar @termChange="onTermChange"></SearchBar>
     <!-- v-bind similar to ":" -->
     <VideoList :videos="videos"></VideoList>
-    {{ videos.length }}
   </div>
 </template>
 
