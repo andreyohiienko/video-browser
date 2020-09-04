@@ -1,7 +1,7 @@
 <template>
-  <li class="list-group-item">
-    <img :src="thumnailUrl" :alt="title" />
-    {{ title }}
+  <li class="media list-group-item">
+    <img class="mr-3" :src="thumnailUrl" :alt="title" />
+    <div class="media-body">{{ title }}</div>
   </li>
 </template>
 
@@ -19,3 +19,14 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+li {
+  display: flex;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #eee;
+}
+</style>
