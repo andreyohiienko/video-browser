@@ -1,6 +1,11 @@
 <template>
   <ul class="list-group">
-    <VideoListItem v-for="video in videos" :key="video.etag" :video="video"></VideoListItem>
+    <VideoListItem
+      v-for="video in videos"
+      :key="video.etag"
+      :video="video"
+      @videoSelect="onVideoSelect"
+    ></VideoListItem>
   </ul>
 </template>
 
@@ -17,6 +22,11 @@ export default {
   // {
   //   videos: Array,
   // },
+  methods: {
+    videoSelect(video) {
+      this.$emit('videoSelect', video)
+    },
+  },
 }
 </script>
 
